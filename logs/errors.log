@@ -1,0 +1,21 @@
+2025-05-25 18:32:12.749 [main] ERROR org.example.common.network.serialize.Serializer.deserialize(32) - Ошибка десериализации данных: java.io.StreamCorruptedException: invalid stream header: 00000000
+	at java.base/java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:977)
+	at java.base/java.io.ObjectInputStream.<init>(ObjectInputStream.java:404)
+	at org.example.common.network.serialize.Serializer.deserialize(Serializer.java:23)
+	at org.example.server.UDPServer.goo1(UDPServer.java:39)
+	at org.example.server.Server.main(Server.java:10)
+
+2025-05-25 18:50:58.900 [main] ERROR org.example.common.network.serialize.Serializer.deserialize(32) - Ошибка десериализации данных: java.io.StreamCorruptedException: invalid stream header: 00000000
+	at java.base/java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:977)
+	at java.base/java.io.ObjectInputStream.<init>(ObjectInputStream.java:404)
+	at org.example.common.network.serialize.Serializer.deserialize(Serializer.java:23)
+	at org.example.server.UDPServer.goo1(UDPServer.java:39)
+	at org.example.server.Server.main(Server.java:10)
+
+2025-05-25 19:08:39.170 [main] ERROR org.example.common.network.serialize.Serializer.deserialize(32) - Ошибка десериализации данных: java.io.StreamCorruptedException: invalid stream header: 00000000
+	at java.base/java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:977)
+	at java.base/java.io.ObjectInputStream.<init>(ObjectInputStream.java:404)
+	at org.example.common.network.serialize.Serializer.deserialize(Serializer.java:23)
+	at org.example.UDPCLI.go1(UDPCLI.java:48)
+	at org.example.CLI.main(CLI.java:10)
+

@@ -1,0 +1,27 @@
+2025-05-25 18:32:12.749 [main] ERROR org.example.common.network.serialize.Serializer.deserialize(32) - Ошибка десериализации данных: java.io.StreamCorruptedException: invalid stream header: 00000000
+	at java.base/java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:977)
+2025-05-25 18:50:58.900 [main] ERROR org.example.common.network.serialize.Serializer.deserialize(32) - Ошибка десериализации данных: java.io.StreamCorruptedException: invalid stream header: 00000000
+	at java.base/java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:977)
+2025-05-25 19:08:39.170 [main] ERROR org.example.common.network.serialize.Serializer.deserialize(32) - Ошибка десериализации данных: java.io.StreamCorruptedException: invalid stream header: 00000000
+	at java.base/java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:977)
+02:33:15.478 [main] INFO  org.example.server.UDPServer.goo1() - поток для получения данных сервером открыт
+02:33:20.065 [main] INFO  org.example.common.network.serialize.Serializer.serialize() - Данные успешно сериализованы
+02:33:20.069 [main] INFO  org.example.UDPCLI.getSerializeRequest() - Запрос сериализован
+02:33:20.075 [main] INFO  org.example.UDPCLI.go1() - поток на клиенте открыт
+02:33:20.075 [main] INFO  org.example.UDPCLI.go1() - запрос записан в буфер
+02:33:20.078 [main] INFO  org.example.UDPCLI.go1() - данные отправлены на сервер
+02:33:20.078 [main] INFO  org.example.server.UDPServer.goo1() - сервер пытается получить данные
+02:33:20.079 [main] INFO  org.example.server.UDPServer.goo1() - ненулевые данные прочитаны
+02:33:20.079 [main] INFO  org.example.UDPCLI.go1() - клиент ждет ответа
+02:33:20.079 [main] INFO  org.example.server.UDPServer.goo1() - байты успешно получены
+02:33:20.110 [main] INFO  org.example.common.network.serialize.Serializer.deserialize() - Данные успешно десериализованы
+02:33:20.111 [main] INFO  org.example.server.UDPServer.goo1() - запрос успешно десериализирован
+02:33:20.112 [main] INFO  org.example.server.UDPServer.goo1() - получен ответ
+02:33:20.115 [main] INFO  org.example.common.network.serialize.Serializer.serialize() - Данные успешно сериализованы
+02:33:20.115 [main] INFO  org.example.server.UDPServer.goo1() - ответ сереализован
+02:33:20.116 [main] INFO  org.example.server.UDPServer.goo1() - ответ записан в буфер
+02:33:20.116 [main] INFO  org.example.server.UDPServer.goo1() - Ответ отправлен
+02:33:21.086 [main] INFO  org.example.UDPCLI.go1() - ответ от сервера получен
+02:33:21.087 [main] INFO  org.example.UDPCLI.go1() - байты успешно получены
+02:33:21.092 [main] INFO  org.example.common.network.serialize.Serializer.deserialize() - Данные успешно десериализованы
+02:33:21.092 [main] INFO  org.example.UDPCLI.go1() - объект успешно десериализован
