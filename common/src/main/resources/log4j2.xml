@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <!-- Основной файл логов -->
+        <File name="File" fileName="logs/app.log" append="true">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36}.%method() - %msg%throwable{short}%n"/>
+        </File>
+
+        <!-- Файл только для ERROR (с полным стектрейсом) -->
+        <File name="ErrorFile" fileName="logs/errors.log" append="true">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36}.%method() - %msg%throwable{full}%n"/>
+            <ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+        </File>
+
+        <!-- Консоль (для разработки) -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%style{%d{HH:mm:ss.SSS}}{cyan} [%t] %highlight{%-5level} %logger{36}.%method() - %msg%throwable{short}%n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="org.example" level="info" additivity="false">
+            <AppenderRef ref="File"/>
+            <AppenderRef ref="ErrorFile"/>
+            <AppenderRef ref="Console"/>
+        </Logger>
+        <Root level="error">
+            <AppenderRef ref="File"/>
+            <AppenderRef ref="ErrorFile"/>
+        </Root>
+    </Loggers>
+</Configuration>
